@@ -1,0 +1,79 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: normal;
+
+  display: flex;
+  flex-direction: column;
+
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(assets/card_back.png) repeat 100px;
+}
+
+main {
+  margin-top: 400px;
+  padding: 2rem 4rem;
+  background: white;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section > * {
+  margin-bottom: 1rem;
+}
+
+#hero {
+  height: 400px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+
+  background-image: url(assets/Title_screen.webp);
+  background-repeat: no-repeat;
+  background-position: left 50% top 20%;
+  background-size: cover;
+}
+
+.max-width {
+  width: 100%;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 1rem;
+}
+
+.image-grid img {
+  width: 100%; /* Ensure images fill the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.team-member {
+  font-size: 18px;
+}
+
+.keyword-red {
+  font-weight: 700;
+  color: rgb(221, 0, 0);
+}
+
+.keyword-blue {
+  font-weight: 700;
+  color: rgb(4, 50, 201);
+}
